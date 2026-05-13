@@ -5,7 +5,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .space {
-    margin-top: 300px;
+    margin-top: 30px;
 }
 
 table {
@@ -16,10 +16,7 @@ table {
 }
 
 #penaltyTable {
-    width: max-content;
-    min-width: 100%;
-    border-collapse: collapse;
-    white-space: nowrap;;
+    width: 33%;
 }
 
 th, td {
@@ -27,6 +24,10 @@ th, td {
     padding: 8px;
     text-align: center;
     color: #fff;
+}
+
+#calc-page {
+    padding-bottom: 606px;
 }
 
 th {
@@ -84,12 +85,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.table-container {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 .start-page-info {
