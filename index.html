@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Shagger</title>
+
+</head>
+
+<body id="index-page" style="background-color: black;">
+
+    <div class="nav-btns hidden">
+        
+        <button type="button" onclick="moveToCalc()" class="start-btn">Calculate Pay</button>
+        <button type="button" onclick="moveToPart()" class="start-btn">Participation Tracker</button>
+
+    </div>
+
+    <div class="spi">
+
+        <h1>Please enter your API key:</h1>
+
+        <div class="start-page-info">
+
+            <input type="text" id="apiKeyInput" placeholder="Put it in me...">
+            <br>
+            <button type="button" class="greenButton" onclick="setAPIKey()">Submit</button>
+            <p>Click <a href="https://www.torn.com/preferences.php#tab=api?step=addNewKey&title=Orleez-API&faction=rankedwarreport,rankedwars" target="_blank" rel="noopener noreferrer">here</a> to generate a new API key<br>Alternatively, generate your own 'Public Only' API key<br>WIcURSMR1ZfsBVOi</p>
+            <p class="tiny-text">No data will be stored or shared<br>API keys are stored locally</p>
+
+        </div>
+
+    </div>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</body>
+</html>

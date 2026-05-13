@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Calculator</title>
+
+</head>
+
+<body id="calc-page" style="background-color: black;">
+
+    <div class = "input-flex" id="initial-screen">
+
+        <h1>Enter War ID:</h1><br>
+
+        <div class="input-container">
+            
+           <div class="popup">
+
+              <span class="popuptext" id="myPopup" onclick="hidePopup()">Please enter a valid War ID</span>
+              <input type="number" id="warIdInput" min="1" step="1" placeholder="Enter War ID">
+              <button type="button" class="greenButton" onclick="fetchReport(); hidePopup();">Go</button>
+
+           </div>
+
+      </div>
+
+        <p>To find your War ID, go to the Torn Logs and click '[view]' on the war entry. At the top of the page it should say something like 'Ranked War #XXXXX', you want the number after '#'<br>41299</p>
+
+    </div>
+
+    <div class="hidden input-flex space" id="payment-input">
+
+        <input type="number" id="payPer" min="1" step="1" placeholder="Enter pay per hit">
+        <h2>Penalties</h2>
+        <button id="penButton" onclick="addPenaltyRow()">Add Penalty</button>
+        <br>
+
+        <table id="penaltyTable">
+
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Member</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+
+            <tbody id="penaltyBody">
+            </tbody>
+
+        </table>
+
+        <br>
+        <button class="greenButton" onclick="calculatePayments()">Calculate</button>
+
+    </div>
+
+    <div class="hidden" id="results">
+
+        <h1 id="calc-opp">Shaggers vs </h1>
+        <p id="calc-date" class="tiny-text"></p>
+
+        <table id="payTable"></table>
+
+        <p>Copy and paste the readable values directly into the Pay Day box</p>
+        
+    </div>
+    <br>
+    <div class="bottom-buttons">
+        <button type="button" class="start-btn" onclick="homepage()">Return</button>
+        <button type="button" class="start-btn" onclick="moveToPart()">Participation Tracker</button>
+    </div>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</body>
+</html>
